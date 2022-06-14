@@ -195,6 +195,9 @@
             body {
                 width: 100%;
             }
+            main {
+                margin: .5em .25em;
+            }
             h1 {
                 font-size: 1.5rem;
                 margin-bottom: .5em;
