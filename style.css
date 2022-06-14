@@ -1,0 +1,245 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+        body {
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Playfair Display', serif;
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        img {
+            display: inline;
+        }
+        /*typeogrophy of main content*/
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        
+        .top-content-dots {
+            display: flex;
+        }
+        
+        .dots {
+            margin-bottom: 4em;
+            margin-right: .5em;
+        }
+        
+        .top-content-dots p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            font-size: .875rem;
+            color: #4F4F4F;
+            width: 592px;
+            margin-top: 0;
+            margin-bottom: 2em;
+        }
+        
+        .main-img {
+            width: 100%;
+            border-radius: 12px;
+        }
+        /* END typeogrophy of main content*/
+        /*ingredients*/
+        
+        h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .ingredients p {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-style: italic;
+            color: #333333;
+            font-size: 1.125rem;
+        }
+        
+        .reqtangle {
+            position: relative;
+            box-sizing: border-box;
+            width: 21px;
+            height: 21px;
+            /* Gray 3 */
+            border: 1px solid #828282;
+            border-radius: 4px;
+            margin: 1em .5em 0;
+        }
+        
+        .graham-list-reqtangle {
+            display: flex;
+        }
+        
+        .graham-list-content p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #333333;
+        }
+        
+        .ingredients-instruction {
+            width: 78%;
+        }
+        /* END ingredients*/
+        /*instruction*/
+        
+        .instruction-list {
+            display: flex;
+        }
+        
+        .reqtangle-orange {
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            /* Orange */
+            background: #F2994A;
+            border-radius: 6px;
+            margin: 1em .5em 0;
+        }
+        
+        .instruction-list p {
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            line-height: 18px;
+            margin-left: 4em;
+        }
+        /* END instruction*/
+        /* time card*/
+        
+        .ingredient-time {
+            display: flex;
+            width: 100%;
+        }
+        
+        .time-card {
+            position: relative;
+            width: 15%;
+            max-height: 350px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 1em .5em;
+            margin: 2em 2em 0 9em;
+        }
+        
+        .time-list {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo img,
+        .time img {
+            width: 25px;
+            height: 25px;
+            margin-top: 1em;
+        }
+        
+        .logo,
+        .time {
+            display: flex;
+        }
+        
+        .logo,
+        .time {
+            text-align: center;
+            justify-content: center;
+            margin-top: 1em;
+        }
+        
+        .time-card p {
+            font-size: 10px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            color: #bdbdbd;
+            text-transform: uppercase;
+            margin-left: 1em;
+            margin-top: 2em;
+        }
+        
+        .logo span {
+            color: #F2994A;
+        }
+        /*footer*/
+        
+        .source {
+            color: #bdbdbd;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+            margin: 3em 0;
+        }
+        
+        footer p {
+            color: #828282;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: .875rem;
+            text-align: center;
+        }
+        /*END footer*/
+        /*mobile screen*/
+        
+        @media(max-width:375px) {
+            body {
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: .5em;
+            }
+            h4 {
+                margin-left: .25em;
+            }
+            .dots {
+                padding-bottom: 2em;
+            }
+            .reqtangle {
+                padding-right: 1em;
+            }
+            .instruction-list p {
+                font-size: .90rem;
+                padding-right: .25em;
+            }
+            .source {
+                font-size: .75rem;
+                text-align: center;
+            }
+            .time-list {
+                flex-direction: row;
+            }
+            .ingredient-time {
+                flex-direction: column;
+            }
+            .ingredients-instruction {
+                order: 2;
+            }
+            .time-card {
+                order: 1;
+                margin: 0;
+                width: 100%;
+                border: none;
+                box-shadow: none;
+            }
+            .logo {
+                text-align: left;
+                justify-content: start;
+            }
+            .time {
+                margin-left: .25em;
+            }
+            .ingredients-instruction {
+                width: 100%;
+            }
+        }
